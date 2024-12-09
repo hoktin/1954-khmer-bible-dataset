@@ -1,0 +1,18 @@
+{
+  "name": "khmer-bible-1954",
+  "version": "1.0.0",
+  "main": "kh-bible-scrapper-script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon kh-bible-scrapper-script.js",
+    "start": "node kh-bible-scrapper-script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "nodemon": "^3.1.7"
+  }
+}
