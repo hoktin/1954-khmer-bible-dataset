@@ -142,6 +142,8 @@ for (let i = 0; i < bibleBooks.length; i++) {
         console.info(`Scraped chapter ${j}`);
     }
     // save to file
-    fs.writeFileSync('bible_books.json', JSON.stringify(bibleBooks, null, 2));
+    fs.writeFileSync('bible_books.json', JSON.stringify({
+        books: bibleBooks
+    }, null, 2));
 }
 
