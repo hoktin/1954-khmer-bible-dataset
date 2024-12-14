@@ -100,7 +100,7 @@ const bibleBooks = [
     { id: 37, name: 'Haggai', num_of_chapters: 2 },
     { id: 38, name: 'Zechariah', num_of_chapters: 14 },
     { id: 39, name: 'Malachi', num_of_chapters: 4 },
-    
+
     { id: 40, name: 'Matthew', num_of_chapters: 28 },
     { id: 41, name: 'Mark', num_of_chapters: 16 },
     { id: 42, name: 'Luke', num_of_chapters: 24 },
@@ -143,6 +143,7 @@ for (let i = 0; i < bibleBooks.length; i++) {
     }
     // save to file
     fs.writeFileSync('bible_books.json', JSON.stringify({
+        version: "1.0.0",
         books: bibleBooks
     }, null, 2));
 }
